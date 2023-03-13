@@ -33,14 +33,14 @@ class ModelTrainer:
             )
 
             models = {
-                "Random Forest": RandomForestRegressor(),
-                "Decision Tree": DecisionTreeRegressor(),
-                "Gradient Boosting": GradientBoostingRegressor(),
-                "Linear Regression": LinearRegression(),
-                "K-Neighbors Classifier": KNeighborsRegressor(),
-                "XGBClassifier": XGBRegressor(),
-                "CatBoosting Classifier": CatBoostRegressor(verbose=False),
-                "AdaBoost Classifier": AdaBoostRegressor(),
+                'Linear regression' : LinearRegression(),
+                'Gradient Boosting' : GradientBoostingRegressor(),
+                'Random Forest Regression' : RandomForestRegressor(),
+                'AdaBoosting Regression' : AdaBoostRegressor(),
+                'Decision Tree' : DecisionTreeRegressor(),
+                'K-Neighbors Regression' : KNeighborsRegressor(),
+                'XGB Regression' : XGBRegressor(),
+                'CatBoosting' : CatBoostRegressor(verbose=False)
 
             }
 
