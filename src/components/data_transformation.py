@@ -16,7 +16,7 @@ import os
  
 @dataclass
 class DataTransformationConfig:
-    preprocessor_obj_file_path:str = os.path.join('artifacts', 'model.pkl') 
+    preprocessor_obj_file_path:str = os.path.join('artifacts', 'preprocess_model.pkl') 
 
 class DataTransformation:
     def __init__(self):
@@ -80,7 +80,7 @@ class DataTransformation:
             preprocessing_obj = self.get_data_transformation_object()
 
             target_column = 'math_score'
-            numerical_features = ['writing_score', 'reading_score']
+            #numerical_features = ['writing_score', 'reading_score']
 
             input_feature_train_df = train_df.drop(columns = [target_column], axis = 1)
             target_feature_train_df = train_df[target_column]
